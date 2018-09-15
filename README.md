@@ -2,8 +2,8 @@
 Github repo for the Diversity hack-a-thon in Austin!
 
 # Dependencies
-*. Node.js
-*. Express
+* Node.js
+* Express
 
 # Starting the App
 
