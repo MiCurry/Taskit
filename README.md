@@ -38,6 +38,9 @@ Boom! You're done!
 | Priority       | priority     | String               |
 | Assigned Users | users        | List of Foriegn Keys |
 | Comments       | comments     | List of Long Chars   |
+| State          | state        | String               |
+| Alert          | alert        | Boolean
+
 
 
 ## Event
