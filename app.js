@@ -13,7 +13,3 @@ var routes = require('./routes/index');
 app.user('/', routes);
 
 const mongoose = require('mongoose');
-
-
-
-let mongoDB
