@@ -2,12 +2,8 @@
 const express = require('express')
 const app = express()
 
+User.create( function (error, user) {
 
-/* Routes */
-app.get('/', function (req, res) {
-  res.render('index'), {title: 'HelloWorld'}
-})
+});
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
-})
+
