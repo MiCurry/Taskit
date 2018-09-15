@@ -44,9 +44,10 @@ Boom! You're done!
 
 | Name              | Access Name | Type                   |
 |-------------------|-------------|------------------------|
+| Event id          |             | Int                    |
 | Event Name        | name        | String                 |
 | Event Date        | date        | Date                   |
 | Event Creator     | creator     | User ID                |
-| Event Comments    | comments    | List of Long Chars   |
+| Event Comments    | comments    | List of Long Chars     |
 | Event Description | description | User ID                |
 | Event Tasks       | tasks       | Task Foreign Keys      |
