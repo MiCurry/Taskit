@@ -48,16 +48,3 @@ Boom! You're done!
 | Event Date     | DateString             |
 | Event Creator  | User ID                |
 | Event Tasks    | Task Foreign Keys      |
-
-
-
-
-
-
-
-User 3's task list
-
-From task select * where uid == 3;
-
-
-task_list = task.get(uid=USER_ID);
