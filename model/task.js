@@ -1,16 +1,22 @@
 mongoose = require('mongoose')
+var Schema = mongoose.Schema;
+var UserSchema = require('./user');
 
-let TaskSchema = new mongoose.Schema({
+var TaskSchema = new Schema({
   name: String,
   desc: String,
   date: Date,
-  type: String,
-  creator: { type: Schema.Types.ObjectID, ref: 'User' },
+  taskType: String,
+  state: String,
+  alert: Boolean,
+  creator: [UserSchema],
   priority: String,
   comments: [{ body: String,
                date: Date,
-               author: { type: Schema.Types.ObjectID, ref: 'User' },}],
-  users: [{ type: Schema.Types.ObjectID, ref: 'User' }],
-})
-let Task = mongose.modle ('Task', TaskSchema);
+               author: [UserSchema]}],
+  users: [UserSchema]
+});
+
+
+let Task = mongoose.model ('Task', TaskSchema);
 module.export = Task;

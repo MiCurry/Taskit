@@ -2,7 +2,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Nav from './components/Nav'; 
+import Nav from './components/Nav';
 import Sidebar from './components/Sidebar';
 import CreateEvent from './components/CreateEvent';
 import Task from './components/Task';
@@ -24,7 +24,7 @@ class App extends React.Component {
         id: "test",
         desc: "this is a desc",
         breakdown: "this is a breakdown",
-        number_of_openings: 3 
+        number_of_openings: 3
       },
       task: {},
     }
@@ -55,6 +55,7 @@ class App extends React.Component {
           <Route exact path = "/createevent" render={(props) => (<CreateEvent {...props} eventChange={this.eventChange} />)}/>)} />
           <Route exact path = "/add" render={(props) => (<Task {...props} taskChange={this.taskChange}/>)} />
           <Route exact path = "/edit" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task} />)} />
+          <Route exact path = "/add" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task} />)} />
         </Switch>
       </div>
     );
@@ -62,4 +63,3 @@ class App extends React.Component {
 }
 
 export default App;
-

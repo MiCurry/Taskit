@@ -27,7 +27,8 @@ class Task extends React.Component {
        <br/>
        <input onChange={this.props.taskChange("priority")}></input>
        <br/>
-      </div>  
+       <input type="submit" value="Submit" href="task/submit"/>
+      </div>
     )
   }
 }

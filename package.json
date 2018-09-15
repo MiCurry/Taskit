@@ -1,20 +1,30 @@
 {
   "name": "taskit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A web application to help voulenteer coordinators to delegate and complete tasks",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5"
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.14",
+    "react-router": "^4.3.1"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon && cd ./src npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiCurry/Taskit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiCurry/Taskit/issues"
+  },
+  "homepage": "https://github.com/MiCurry/Taskit#readme"
 }

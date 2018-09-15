@@ -7,5 +7,5 @@ let UserSchema = new mongoose.Schema({
   phone: Number
 })
 
-let User = mongose.modle ('User', UserSchema);
+let User = mongoose.model ('User', UserSchema);
 module.export = User;
