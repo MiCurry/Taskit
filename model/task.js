@@ -5,6 +5,8 @@ let TaskSchema = new mongoose.Schema({
   desc: String,
   date: Date,
   type: String,
+  state: String,
+  alert: Boolean,
   creator: { type: Schema.Types.ObjectID, ref: 'User' },
   priority: String,
   comments: [{ body: String,
