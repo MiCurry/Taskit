@@ -17,34 +17,36 @@ Boom! You're done!
 # Schemas
 
 ## User
-| Field    | Type   |
-|----------|--------|
-| User id  | int    |
-| User Name| string |
-| Role     | string |
-| Password | string |
-| User Pin | string |
-| Phone #  | string |
+| Name     | Access Name | Type                 |
+|----------|-------------|----------------------|
+| User id  |             | int                  |
+| User Name| name        | string               |
+| Role     | role        | string               |
+| Password |             | string               |
+| User Pin | pin         | string               |
+| Phone #  | phone       | string               |
 
 
 ## Task
 
-| Field          | Type                 |
-|----------------|----------------------|
-| Task Id        | int                  |
-| Creator        | String               |
-| Task Name      | String               |
-| Task Type      | String               |
-| Priority       | String               |
-| Assigned Users | List of Foriegn Keys |
-| Comments       | List of Long Chars   |
+| Name           | Access Name  | Type                 |
+|----------------|--------------|----------------------|
+| Task Id        |              | int                  |
+| Creator        | creator      | UID                  |
+| Task Name      | name         | String               |
+| Task Type      | type         | String               |
+| Priority       | priority     | String               |
+| Assigned Users | users        | List of Foriegn Keys |
+| Comments       | comments     | List of Long Chars   |
 
 
 ## Event
 
-| Field          | Type                   |
-|----------------|------------------------|
-| Event Name     | String                 |
-| Event Date     | DateString             |
-| Event Creator  | User ID                |
-| Event Tasks    | Task Foreign Keys      |
+| Name              | Access Name | Type                   |
+|-------------------|-------------|------------------------|
+| Event Name        | name        | String                 |
+| Event Date        | date        | Date                   |
+| Event Creator     | creator     | User ID                |
+| Event Comments    | comments    | List of Long Chars   |
+| Event Description | description | User ID                |
+| Event Tasks       | tasks       | Task Foreign Keys      |
