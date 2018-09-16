@@ -27,21 +27,29 @@ event = require('./model/event');
 // Api
 
 /* User */
-app.post('/api/user', function(req, res){
+app.post('/api/user', function(req, res){ // Create a new user
   console.log("We got a request to post a user!")
   res.status('201')
   res.send();
 })
-app.patch('/api/user', function(req, res){
+app.patch('/api/user', function(req, res){ // Update a user
   res.status('201')
   res.send();
 })
-app.delete('/api/user', function(req, res){ })
+app.delete('/api/user', function(req, res){ }) // Delete a user
 
 /* Task */
-
+app.post('/api/task', functions(req, res){ })                 // Create a task
+app.post('/api/task/comment', functions(req, res){ })         // Create a comment for a task
+app.patch('/api/event/task/complete', functions(req, res){ }) // Mark a task as complete
+app.patch('/api/event/task/drop', functions(req, res) { })    // Religish a task
+app.delete('/api/event/task', functions(req, res) { })        // Delete a task (Not completing a task just removing it if it was created by accident or not needed)
 
 /* Event */
+app.post('/api.event', function(req, res) { })                // Create an event
+app.post('/api/event/comment', function(req, res) { })        // Add a comment to an event
+app.patch('/api/event', function(req, res) { }                // Update the details of an event
+app.delete('/api/event', function(req, res) { })              // Delete an event
 
 
 /*
