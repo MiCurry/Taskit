@@ -1,5 +1,16 @@
 # Taskit
 
+## Running the app
+
+In one tab run:
+```
+nodemon
+```
+In another tab run:
+```
+npm start
+```
+
 # Users
 
 ## Chris Roth
