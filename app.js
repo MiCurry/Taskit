@@ -25,17 +25,39 @@ event = require('./model/event');
 // Routes
 
 // Api
-app.get('/api/users', )
-app.get('/api/users/:uid', ) // List tasks for users
-app.get('/api/event/:eid', ) // List tasks for an event
-app.get('/api/task/:uid', )  // List tasks for a user
 
-app.post('/api/user') // Create new user
+/* User */
+app.post('/api/user', function(req, res){
+  console.log("We got a request to post a user!")
+  res.status('201')
+  res.send();
+})
+app.patch('/api/user', function(req, res){
+  res.status('201')
+  res.send();
+})
+app.delete('/api/user', function(req, res){ })
 
+/* Task */
+
+
+/* Event */
+
+
+/*
+app.post('/api/event/task', task.create); // Create a new task for an event
+app.post('/api/event/task/comment', task.comment); // Create a new comment for a task
+app.patch('/api/event/task/complete', task.complete); // mark the task as complete
+app.patch('/api/event/task/drop', task.drop); // Religish a task
+
+app.post('/api/event', event.create); // Create a new event
+app.post('/api/event/comment', event.comment); // Create a new eent
+app.patch('/api/event', event.update);
+*/
 
 
 // Create global app object
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 3001;
 app.listen(port, function() {
     console.log('Listening on ' + port);
 });
