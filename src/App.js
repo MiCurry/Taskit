@@ -113,17 +113,11 @@ class App extends React.Component {
         <Switch>
           <Route exact path = "/" render={(props) => (<TaskListOrganizer {...props} cur_event={this.state.cur_event} delete={this.delete} />)} />
           <Route exact path = "/createevent" render={(props) => (<CreateEvent {...props} eventChange={this.eventChange} />)}/>)} />
-<<<<<<< HEAD
-          <Route exact path = "/add" render={(props) => (<Task {...props} taskChange={this.taskChange}/>)} />
-          <Route exact path = "/edit" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task} />)} />
-          <Route exact path = "/add" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task} />)} />
-=======
           <Route exact path = "/add" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task}
           updateTask={this.updateTask} appendInput={this.appendInput} createBlank={this.createBlank} loadRecipe={this.loadRecipe} />)} />
           <Route exact path = "/edit/:id" render={(props) => (<Task {...props} taskChange={this.taskChange} cur_task={this.state.cur_task}
           addTask={this.addTask} appendInput={this.appendInput} createBlank={this.createBlank}  updateTask={this.updateTask} loadRecipe={this.loadRecipe}  />)} />
           <Route exact path = "/volunteer" render={(props) => (<VolunteerTaskList {...props} cur_event={this.state.cur_event} /> )} />
->>>>>>> 0205b7b8b7421666c501bb4ec33a5366da6b718c
         </Switch>
       </div>
     );
