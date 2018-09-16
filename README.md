@@ -1,5 +1,7 @@
 # Taskit
 
+Taskit is an app to help voulenteer coordniator's
+
 ## Running the app
 
 In one tab run:
