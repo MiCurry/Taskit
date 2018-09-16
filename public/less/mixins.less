@@ -1,0 +1,48 @@
+.flexMix(@dir: row, @jc: center, @ai: center) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.inputBox(@width: 600px){
+    width:@width;
+    height: 50px;
+    font-size:1.8rem;
+    color: @lightgrey;
+    font-weight: lighter;
+    margin: 20px;
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+    border:1px solid @darkgrey;
+    font-family:'Ubuntu', sans-serif;
+}
+.inputHeader(){
+    font-size:1.2rem;
+    color:@darkgrey;
+}
+.buttonCreator(){
+    width: 220px;
+    height:40px;
+    border-radius: 50px;
+    color: @white;
+    background:@cta;
+    font-size: 1.8rem;
+    font-weight: bold;
+    .flexMix(row, center, center);
+}
+.textAreaCreator(@width: 600px){
+    width: @width;
+    height: 150px;
+    font-size:1.8rem;
+    color: @lightgrey;
+    font-weight: lighter;
+    margin: 20px;
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+    border:1px solid @darkgrey;
+    font-family:'Ubuntu', sans-serif;
+    resize: none;
+}

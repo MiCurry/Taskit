@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
-
 * {
   box-sizing: border-box;
 }
@@ -201,7 +198,6 @@ h5 {
   align-items: center;
 }
 .container .content-window {
-  border: 1px solid red;
   width: 100%;
   height: 92vh;
   display: flex;
@@ -294,7 +290,28 @@ h5 {
   height: 50px;
   border: 1px solid #4A4A4A;
   border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
- .content-window .number-of-openings .number-drop-down flex h2 {
+.container .content-window .number-of-openings .number-drop-down h2 {
+  margin-right: 10px;
   font-size: 1.8rem;
+  text-decoration: underline;
+}
+.container .content-window .task-priority {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+}
+.container .content-window .task-priority .priority-top {
+  width: 75%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

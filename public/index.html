@@ -1,40 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+    <title>TaskIt</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+     <div class="wrapper">
+        <nav class="topNav">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+            <div class="navCenter">
+                <h1>taskit</h1>
+            </div>
+
+        </nav>
+        <section class="container">
+            <div class="side-bar-left">
+                <div class="side-bar-left-top">
+                    <a href="#" class="add-event">Add event</a>
+                    <a href="#" class="upcomming">upcomming events</a>
+                    <a href="#" class="past">past events</a>
+                    <a href="#" class="timline"> timeline</a>
+                    <a href="#" class="profile">profile</a>
+                </div>
+                <div class="side-bar-left-bottom">
+                    <a href="#" class="seetings">settings</a>
+                    <a href="#" class="contact">contact-us</a>
+                    <a href="#" class="terms">terms</a>
+                </div>
+            </div>
+
+
+
+            <!-- content-window styling is in main-content.less -->
+            <div class="content-window">
+                    <div class="task-description">
+                            <div class="task-info">
+                                <div class="input">
+                                    <h2>Task Title:</h2>
+                                    <br>
+                                    <input type="text" name="task-title">
+                                </div>
+                                <div class="input">
+                                    <h2 class="yourMom">Task Description:</h2>
+                                    <br>
+                                    <textarea name="task-description" class="area-input" placeholder="Breif description of task here.."></textarea>
+                                </div>
+                                <div class="input">
+                                    <h2 class="yourMom">Task Breakdown:</h2>
+                                    <br>
+                                    <input type="text" name="breakdown" placeholder="Enter description task breakdown...">
+                                </div>
+                            </div>
+                            <div class="task-priority">
+                                <div class="priority-top input">
+                                    <div class="priority-level">
+                                        <h2>Priority level:</h2>
+                                        <br>
+                                        <div class="priorities">
+                                            <h2>High</h2>
+                                            <hr>
+                                            <h2>Medium</h2>
+                                            <hr>
+                                            <h2>Low</h2>
+                                        </div>
+                                    </div>
+                                    <div class="number-of-openings">
+                                        <h2># of Openings</h2>
+                                        <div class="number-drop-down">
+                                            <h2>v </h2>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notify"> -->
+                                        <!-- <input type="checkbox">Notify me when the task is complete</input> -->
+                                    <!-- </div> -->
+                                </div>
+                                <div class="button">
+                                    <h2>Add task to event</h2>
+                                </div>
+                            </div>
+                        </div>
+                <!-- stop here when adding and removing -->
+            </div>
+
+        </section>
+
+
+    </div>
+
+</body>

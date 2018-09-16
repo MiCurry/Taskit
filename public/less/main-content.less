@@ -1,0 +1,87 @@
+.container {
+    .flexMix(row, space-between, center);
+    .content-window {
+        width: 100%;
+        height: 92vh;
+        .flexMix(row, flex-start, flex-start);
+        padding: 60px;
+
+        .input {
+            h2 {
+                .inputHeader();
+            }
+            input {
+                .inputBox();
+            }
+            .area-input{
+                .textAreaCreator();
+            }
+            .yourMom {
+                margin-top: 30px;
+            }
+        }
+        .add-event {
+            .flexMix(column, flex-start, flex-start);
+            .button{
+                align-self: flex-end;
+                margin-left: 630px;
+            }
+        }
+
+        .task-info input{
+            width:100%;
+           
+        }
+        .task-info .area-input{
+            
+        }
+        .task-description{
+            .flexMix(row, space-between, flex-start);
+            width:100%;
+        }
+       
+            .button{
+                .buttonCreator();
+            }
+        
+        .priorities{
+            border: 1px solid @darkgrey;
+            border-radius: 6px;
+            padding: 10px;
+            hr{
+                width:75%;
+            }
+            h2{
+                font-size: 1.8rem;
+                margin-left:30px;
+                margin:10px;
+            }
+        }
+        .number-of-openings{
+            .number-drop-down{
+              height:50px;
+              border:1px solid @darkgrey;
+              border-radius: 6px;
+              display:flex;
+              align-items: center;
+              .flexMix(row,flex-end, center);
+              h2{ 
+                  margin-right: 10px;
+                  font-size:1.8rem;
+                  text-decoration: underline;
+                }
+
+
+            }
+        }
+        .task-priority{
+            .flexMix(column, space-between, center);
+            height:70vh;
+            .priority-top{
+                width:75%;
+                height: 50%;
+                .flexMix(column, space-between, center);
+            }
+        }
+    }
+}
