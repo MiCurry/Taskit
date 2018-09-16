@@ -1,17 +1,15 @@
 import React from 'react';
 
+/* Nav component */
+
 class Nav extends React.Component {
   render(){
     return(
-      <nav class="topNav">
-        
-        <div class="navCenter">
+      <nav className="topNav">     
+        <div className="navCenter">
           <h1>TaskIt</h1>
-        </div>
-      
-      </nav>
-      
-      
+        </div>  
+      </nav>     
     )
   }
 }
