@@ -38,14 +38,9 @@ class App extends React.Component {
         id: "test",
         name: "name",
         desc: "this is a desc",
-<<<<<<< HEAD
-        breakdown: "this is a breakdown",
-        number_of_openings: 3
-=======
         breakdown: ["this is a breakdown"],
         number_of_openings: 3 ,
         priority: "urgent",
->>>>>>> 0205b7b8b7421666c501bb4ec33a5366da6b718c
       },
 
     }
