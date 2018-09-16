@@ -1,16 +1,13 @@
 # Taskit
-Github repo for the Diversity hack-a-thon in Austin!
 
-# Dependencies
-*. Node.js
-*. Express
+# Users
 
-# Starting the App
+## Chris Roth
 
-```
-# After you clone the repo and have everything installed run:
-nodemon
-```
-Boom! You're done!
+## Kristin Taylor
 
+## Laurie Hansson
 
+## Corean Gonzolas
+
+## Miles Curry
