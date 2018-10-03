@@ -1,6 +1,6 @@
 # Taskit
 
-Taskit is an app to help voulenteer coordniator's
+Taskit is an app to help voulenteer coordniators
 
 ## Running the app
 
